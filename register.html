@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>VORTEX REGISTRATION FORM</title>
+<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+<style>
+body { padding-top:30px; }
+.form-control { margin-bottom: 10px; }
+.container {margin-left: 475px;}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+	<div class='firstimage'><img src="eVoteLogoMain.png"/></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+            <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up as a Voter!</legend>
+            <form action="register.php" method="post" class="form" role="form">
+
+
+            
+                <input class="form-control" name="email" placeholder="Your Email" type="text" />
+                <input class="form-control" name="password" placeholder="Password" type="password" required/>
+                <input class="form-control" name="repassword" placeholder="Re-enter Password" type="password" required/>
+                <input class="form-control" placeholder="Your UserName" name="username" type="text" />
+                <input class="form-control" placeholder="Your FullName" name="fullname" type="text"  />
+                <p>Sex <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female<br>
+                </p>
+                 <select name="college">
+                    <option value="nitt">NITT</option>
+                    <option value="iitm">IITM</option>
+                    <option value="shastra">Shastra</option>
+                    <option value="vit">VIT</option>
+                </select>
+                
+                
+                 <select name="degree">
+                    <option value="be">B.E.</option>
+                    <option value="mca">MCA</option>
+                    <option value="me">M.E.</option>
+                    <option value="barch">B.Arch</option>
+                </select>
+                
+                
+                 <select name="year">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                 <select name="branch">
+                    <option value="cse">CSE</option>
+                    <option value="eee">EEE</option>
+                    <option value="ece">ECE</option>
+                    <option value="ice">ICE</option>
+                </select>
+                
+                <input class="form-control" placeholder="Your contact" name="phone" type="integer" />
+                <input class="form-control" placeholder="Your Address" name="address" type="text" />
+
+                
+                 <select name="city">
+                    <option value="kol">Kolkata</option>
+                    <option value="rai">Raipur</option>
+                    <option value="tri">Trichy</option>
+                    <option value="mas">Chennai</option>
+                </select>
+
+                 <select name="state">
+                    <option value="mah">Maharashtra</option>
+                    <option value="tn">Tamil Nadu</option>
+                    <option value="wb">West Bengal</option>
+                    <option value="ker">Kerela</option>
+                </select>
+                
+            
+            
+            <br />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" onclick="location.href = 'register.php';">Sign up</button>
+            </form>
+        </div>
+    </div>
+</div>
+    
+ 
+    
+</body>
+</html>
